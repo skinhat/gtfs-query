@@ -1,7 +1,8 @@
 # gtfs-query
 
-System to import Googles GTFS data into a database and allowing querying via a website. Uses Steffen Martinsen php-gtfs-mysql tool to import into a database. This system can only search single legs at a time and does not join routes. For example if you need to get to point B and you need to take a bus to point C to get to point B this system will not work. I have made this project open source so that hopefully someone might want to make a more elaborate system.
-
+System to import Googles GTFS data into a database and allowing querying via a website. Uses Steffen Martinsen php-gtfs-mysql tool to import into a database. This system can only search single legs at a time and does not join routes. For example if you need to get to point B and you need to take a bus to point C to get to point B this system will not work. I have made this project open source so that hopefully someone might want to make a more elaborate system.<br>
+<br>
+At demo site is at http://skinhat.com/gtfs-query
 <br>
 
 Instructions<br>
