@@ -5,7 +5,8 @@ System to import Googles GTFS data into a database and allowing querying via a w
 
 
 Instructions
-1. Put source onto web server
-2. Create a database to put the GTFS data into eg travelangency-gtfs
-3. Go to http://localhost/gtfs-query/php-gtfs-mysql and enter the database name and its username and password and click yes to create the tables
-4. Got to http://localhost/gtfs-query/ to do a query. To see some results try departure 'Nye County' and arrival 'Bullfrog' at time '07:00'
+1. Put source onto web server<br>
+2. Create a database to put the GTFS data into eg travelangency-gtfs<br>
+3. Put your GTFS data into gtfs-query/php-gtfs-mysql/gtfs (by default it is Googles test data)
+4. Go to http://localhost/gtfs-query/php-gtfs-mysql and enter the database name and its username and password and click yes to create and import the tables<br>
+5. Got to http://localhost/gtfs-query/ to do a query. To see some results try departure 'Nye County' and arrival 'Bullfrog' at time '07:00'<br>
