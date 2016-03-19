@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forth Temple | Welcome</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
@@ -27,17 +27,12 @@
 		if (document.getElementsByName('departure')[0].value!=''&&document.getElementsByName('arrival')[0].value!='') {
 			if (document.getElementsByName('departure_time')[0].value=='')
           document.getElementsByName('departure_time_fake')[0].value=get24hourtime();
-      //alert("mm"+document.getElementsByName('departure_time')[0].value+"xx");
       document.getElementById("myForm").submit();//window.location.href = 'https://www.google.com/maps?saddr='+document.getElementsByName('departure')[0].value+',New+Zealand&daddr='+document.getElementsByName('arrival')[0].value+',New+Zealand&dirflg=r';
     
 		}else
 			alert('Enter a destination and arrival.');
 
- /* document.write("hrere"+nowi.getMonth()+"xx");
-  nowi.format("HH:MM");
-  document.write("hrere");
-  document.write(s);
-  document.write("MM");*/
+
   	}
   </script>
   <body>
@@ -58,15 +53,13 @@
         
          $link = mysql_connect($host, $username, $password)
             or die('Could not connect: ' . mysql_error());
-        //echo 'Connected successfully';
+
         mysql_select_db($dbname) or die('Could not select database');
-        //if (!$_POST['departure_time']) 
-       //   $departure_time=date("H:i:s");
-        //else
+
         $departure_time=$_POST['departure_time'];
         if (!$departure_time)
           $departure_time=$_POST['departure_time_fake'];
-        //echo "xxx".$departure_time."uu";
+
         $query = "
 SELECT t.trip_id,
        start_s.stop_name as departure_stop,
@@ -127,11 +120,8 @@ WHERE
             <?php
             }
             $results++;
-         // echo "\t<tr>\n";
-         // foreach ($line as $col_value) {
-         //     echo "\t\t<td>$col_value</td>\n";
+
           }
-         //  echo "\t</tr>\n";
 
         }
 
